@@ -9,9 +9,14 @@
 /* Begin PBXBuildFile section */
 		0C80B921A6F3F58F76C31292 /* libPods-FreshMart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-FreshMart.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		2787800B16C84595A2CD7E2B /* Okra-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38C3CA913E414A3A85F5AED0 /* Okra-Medium.ttf */; };
+		525199AA83624A80BE418B61 /* Okra-MediumLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E76BD53DC41429DA2C06B8C /* Okra-MediumLight.ttf */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		DD3F193B86E132F95A2C8727 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		DE122C108EE3472BAFCBE5E9 /* Okra-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 491A74EDAC0A4BE6A4181FBE /* Okra-Regular.ttf */; };
+		DEC24BD08FDD40B0879BCD37 /* Okra-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2911F3DE6AF4862BC0A9D8C /* Okra-Bold.ttf */; };
+		F54871E7FE9C4F8DA7564318 /* Okra-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41910E9C5381456AB23EA208 /* Okra-ExtraBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,11 +24,16 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FreshMart/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FreshMart/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = FreshMart/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		38C3CA913E414A3A85F5AED0 /* Okra-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Okra-Medium.ttf"; path = "../src/assets/fonts/Okra-Medium.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-FreshMart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreshMart.debug.xcconfig"; path = "Target Support Files/Pods-FreshMart/Pods-FreshMart.debug.xcconfig"; sourceTree = "<group>"; };
+		41910E9C5381456AB23EA208 /* Okra-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Okra-ExtraBold.ttf"; path = "../src/assets/fonts/Okra-ExtraBold.ttf"; sourceTree = "<group>"; };
+		491A74EDAC0A4BE6A4181FBE /* Okra-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Okra-Regular.ttf"; path = "../src/assets/fonts/Okra-Regular.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-FreshMart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreshMart.release.xcconfig"; path = "Target Support Files/Pods-FreshMart/Pods-FreshMart.release.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-FreshMart.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FreshMart.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = FreshMart/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = FreshMart/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9E76BD53DC41429DA2C06B8C /* Okra-MediumLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Okra-MediumLight.ttf"; path = "../src/assets/fonts/Okra-MediumLight.ttf"; sourceTree = "<group>"; };
+		E2911F3DE6AF4862BC0A9D8C /* Okra-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Okra-Bold.ttf"; path = "../src/assets/fonts/Okra-Bold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -60,6 +70,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5E50890D25584B65B85DD6B3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				38C3CA913E414A3A85F5AED0 /* Okra-Medium.ttf */,
+				41910E9C5381456AB23EA208 /* Okra-ExtraBold.ttf */,
+				9E76BD53DC41429DA2C06B8C /* Okra-MediumLight.ttf */,
+				491A74EDAC0A4BE6A4181FBE /* Okra-Regular.ttf */,
+				E2911F3DE6AF4862BC0A9D8C /* Okra-Bold.ttf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +98,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				5E50890D25584B65B85DD6B3 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -161,6 +185,11 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				DD3F193B86E132F95A2C8727 /* PrivacyInfo.xcprivacy in Resources */,
+				2787800B16C84595A2CD7E2B /* Okra-Medium.ttf in Resources */,
+				F54871E7FE9C4F8DA7564318 /* Okra-ExtraBold.ttf in Resources */,
+				525199AA83624A80BE418B61 /* Okra-MediumLight.ttf in Resources */,
+				DE122C108EE3472BAFCBE5E9 /* Okra-Regular.ttf in Resources */,
+				DEC24BD08FDD40B0879BCD37 /* Okra-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
