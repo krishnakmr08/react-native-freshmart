@@ -2,7 +2,7 @@ import { Platform } from 'react-native';
 
 export const GOOGLE_MAP_API = 'AIzaSyDeoF2fV2OQDBbKOMkdWl-gPfjbVo8YgBc';
 
-export const BRANCH_ID = '699051fe91cfea8baa4ea9c8';
+export const BRANCH_ID = '69b6fad0d49f0fe4d2948b39';
 
 export const BASE_URL = 'https://freshmart-ctsy.onrender.com/api';
 

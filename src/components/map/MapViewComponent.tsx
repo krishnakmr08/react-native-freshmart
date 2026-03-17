@@ -5,7 +5,6 @@ import { customMapStyle } from '@utils/CustomMap';
 import { getPoints } from '@utils/getPoints';
 import { Colors } from '@utils/Constants';
 import { GOOGLE_MAP_API } from '@service/config';
-
 import Markers from './Markers';
 
 type MapViewComponentProps = {
@@ -15,6 +14,7 @@ type MapViewComponentProps = {
   deliveryPersonLocation?: LatLng | null;
   hasAccepted: boolean;
   hasPickedUp: boolean;
+  camera?: any;
 };
 
 const MapViewComponent = ({
@@ -24,6 +24,7 @@ const MapViewComponent = ({
   deliveryPersonLocation,
   hasAccepted,
   hasPickedUp,
+  camera,
 }: MapViewComponentProps) => {
   const destination = hasPickedUp ? deliveryLocation : pickupLocation;
 
@@ -42,6 +43,7 @@ const MapViewComponent = ({
       userLocationCalloutEnabled={true}
       userLocationPriority="high"
       showsScale={false}
+      camera={camera}
       showsIndoorLevelPicker={false}
       pitchEnabled={false}
       showsTraffic={false}
@@ -71,7 +73,7 @@ const MapViewComponent = ({
           coordinates={getPoints([pickupLocation, deliveryLocation])}
           strokeColor={Colors.text}
           strokeWidth={2}
-          geodesic
+          geodesic={true}
           lineDashPattern={[12, 10]}
         />
       )}

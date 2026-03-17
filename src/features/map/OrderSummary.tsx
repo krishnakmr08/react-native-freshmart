@@ -22,7 +22,7 @@ interface Order {
 }
 
 const OrderSummary: FC<{ order: Order }> = ({ order }) => {
-  const items = order?.items ?? [];
+  const items = (order?.items ?? []).filter(i => i?.item);
 
   const totalPrice = items.reduce(
     (total, cartItem) => total + cartItem.item.price * cartItem.count,

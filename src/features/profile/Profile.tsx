@@ -81,6 +81,7 @@ const Profile = () => {
         renderItem={renderOrders}
         keyExtractor={(item: any) => item?.orderId}
         contentContainerStyle={styles.scrollViewContent}
+        showsVerticalScrollIndicator={false}
       />
     </View>
   );
