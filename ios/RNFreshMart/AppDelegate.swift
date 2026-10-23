@@ -1,4 +1,5 @@
 import UIKit
+import GoogleMaps
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -6,6 +7,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
   ) -> Bool {
-    true
+    GMSServices.provideAPIKey("AIzaSyC0khj6aM1ROrehyX_y6OB_JzcX-gYmhMM")
+    return true
   }
 }
