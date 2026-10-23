@@ -1,5 +1,30 @@
 {
   "extends": "@react-native/typescript-config",
+  "compilerOptions": {
+    "strict": true,
+    "types": ["jest"],
+    "paths": {
+      "@assets/*": ["./src/assets/*"],
+      "@features/*": ["./src/features/*"],
+      "@service/*": ["./src/service/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@navigation/*": ["./src/navigation/*"],
+      "@components/*": ["./src/components/*"],
+      "@state/*": ["./src/state/*"],
+      "@utils/*": ["./src/utils/*"]
+    },
+    "noEmit": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true
+  },
   "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["**/node_modules", "**/Pods"]
+  "exclude": [
+    "**/node_modules",
+    "**/Pods",
+    "**/android",
+    "**/build",
+    "**/dist",
+    "**/coverage"
+  ]
 }
