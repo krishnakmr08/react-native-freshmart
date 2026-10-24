@@ -1,97 +1,342 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+<a id="top"></a>
 
-# Getting Started
+<div align="center">
+  <img src="./src/assets/images/icon.png" alt="FreshMart app logo" width="96" height="96" />
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+  <h1>🛒 FreshMart</h1>
+  <h2>A modern grocery delivery app built with React Native CLI</h2>
+  <p>Explore groceries, manage your cart, and track deliveries with
+  interactive maps and real-time order updates.</p>
+  <p><em>Google Maps integration · Gesture-driven UI · Feature-based architecture</em></p>
 
-## Step 1: Start Metro
+  <p>
+    <a href="https://reactnative.dev/"><img src="https://img.shields.io/badge/React_Native-CLI-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native CLI" /></a>
+    <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-Typed-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" /></a>
+    <a href="https://zustand.docs.pmnd.rs/"><img src="https://img.shields.io/badge/Zustand-State_Management-FF6B35?style=for-the-badge" alt="Zustand state management" /></a>
+    <a href="https://socket.io/"><img src="https://img.shields.io/badge/Socket.IO-Realtime-010101?style=for-the-badge&logo=socketdotio&logoColor=white" alt="Socket.IO realtime" /></a>
+    <a href="https://docs.swmansion.com/react-native-reanimated/"><img src="https://img.shields.io/badge/Reanimated-Animations-7B61FF?style=for-the-badge" alt="React Native Reanimated animations" /></a>
+  </p>
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+  <p>
+    <a href="#-demo">▶ Watch Demo</a> ·
+    <a href="#-features">✨ Features</a> ·
+    <a href="#-tech-stack">🧱 Tech Stack</a> ·
+    <a href="#-architecture">🏗 Architecture</a> ·
+    <a href="#-getting-started">🚀 Getting Started</a> ·
+    <a href="#-screenshots">📸 Screenshots</a>
+  </p>
+</div>
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+---
 
-```sh
-# Using npm
+## 📑 Table of Contents
+
+<details>
+<summary><strong>Open README navigation</strong></summary>
+
+- [Overview](#-overview)
+- [Demo](#-demo)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Project Structure](#-project-structure)
+- [Architecture](#-architecture)
+- [State Management](#-state-management)
+- [Real-Time Updates](#-real-time-updates)
+- [Storage](#-storage)
+- [Screenshots](#-screenshots)
+- [Getting Started](#-getting-started)
+- [Troubleshooting](#-troubleshooting)
+- [Scripts](#-scripts)
+- [Author](#-author)
+
+</details>
+
+---
+
+## 📱 Overview
+
+**FreshMart** is a grocery delivery mobile application built with **React Native CLI** and **TypeScript**. It combines product browsing, cart management, authentication flows, order management, and interactive map-based delivery tracking.
+
+The application follows a modular, feature-based architecture. It uses Zustand for state management and includes native map integration, gesture handling and animations, persistent local storage, and Socket.IO for real-time communication with the backend.
+
+<p align="right"><a href="#top">⬆ Back to top</a></p>
+
+---
+
+## 🎬 Demo
+
+<div align="center">
+  <h3>Watch the FreshMart app walkthrough</h3>
+  <a href="https://youtu.be/K3bmgN-bZFA">
+    <img src="https://img.youtube.com/vi/K3bmgN-bZFA/maxresdefault.jpg" alt="FreshMart app walkthrough on YouTube" width="700" />
+  </a>
+  <p><a href="https://youtu.be/K3bmgN-bZFA"><strong>▶ Watch on YouTube</strong></a></p>
+</div>
+
+<p align="right"><a href="#top">⬆ Back to top</a></p>
+
+---
+
+## ✨ Features
+
+<details open>
+<summary><strong>🛍️ Shopping Experience</strong></summary>
+
+- **Product browsing:** Explore products organized by category.
+- **Cart management:** Add or remove items, adjust quantities, and update cart totals.
+- **Authentication:** Sign in and keep your session saved across app launches.
+
+</details>
+
+<details open>
+<summary><strong>📦 Orders and Delivery</strong></summary>
+
+- **Order tracking:** Follow order progress from placement through delivery.
+- **Real-time delivery updates:** Receive live order status and delivery partner location updates via Socket.IO.
+- **Map and route display:** Visualize delivery locations, map markers, and routes using Google Maps integration.
+
+</details>
+
+<details open>
+<summary><strong>⚡ UI, Animation, and Performance</strong></summary>
+
+- **Gesture-driven interactions:** Use responsive gestures built with React Native Gesture Handler and Reanimated.
+- **Lottie animations:** Add engaging animations to key interactions.
+- **Carousels and banners:** Browse products through interactive carousels and scrolling banners.
+- **Gradients and SVG:** Enhance UI elements with linear gradients and SVG graphics.
+- **Responsive typography:** Scale text sizes across different screen sizes for a consistent UI.
+
+</details>
+
+<p align="right"><a href="#top">⬆ Back to top</a></p>
+
+---
+
+## 🧱 Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| **React Native CLI** | Native Android and iOS application framework |
+| **TypeScript** | Static typing across the application |
+| **React Navigation** | Native stack navigation |
+| **Zustand** | Global state management |
+| **Axios** | HTTP requests to backend APIs |
+| **Socket.IO Client** | Event-driven, real-time communication |
+| **React Native Maps** | Native maps and markers |
+| **React Native Maps Directions** | Route rendering between coordinates |
+| **React Native Reanimated** | High-performance UI animations |
+| **React Native Gesture Handler** | Touch and gesture interactions |
+| **React Native MMKV** | Native key-value persistence |
+| **Lottie React Native** | JSON-based animations |
+| **React Native SVG** | SVG rendering |
+| **React Native Community Geolocation** | Device location access |
+
+<p align="right"><a href="#top">⬆ Back to top</a></p>
+
+---
+
+## 📂 Project Structure
+
+<details open>
+<summary><strong>View Folder Layout</strong></summary>
+
+```text
+react-native-freshmart/
+├── android/                 # Android native project
+├── ios/                     # iOS native project
+├── src/
+│   ├── assets/              # Images, Lottie files, and fonts
+│   ├── components/          # Shared UI components
+│   ├── features/            # Feature modules: auth, cart, orders, maps
+│   ├── navigation/          # Stack and tab navigation
+│   ├── service/             # API clients and service functions
+│   ├── state/               # Zustand stores
+│   ├── styles/              # Theme tokens and style utilities
+│   └── utils/               # Shared helper functions
+├── package.json
+└── README.md
+```
+
+</details>
+
+<p align="right"><a href="#top">⬆ Back to top</a></p>
+
+---
+
+## 🏗 Architecture
+
+```mermaid
+flowchart TD
+    UI[UI Components<br/>Reanimated + Gesture Handler]
+    FM[Feature Modules<br/>Auth · Cart · Orders · Maps]
+    ST[Zustand State<br/>Auth · Cart · Map]
+    API[API Services<br/>Axios + Socket.IO Client]
+    BE[Backend API + Socket.IO Server]
+
+    UI --> FM
+    FM <--> ST
+    FM --> API
+    API <--> BE
+```
+
+The architecture is designed to support:
+
+- **Modularity:** Organize functionality into focused, maintainable feature modules.
+- **Separation of concerns:** Keep UI components, state management, and network operations separate.
+- **Shared state:** Manage application-wide data efficiently using Zustand.
+- **Real-time communication:** Support live order status and delivery partner location updates using Socket.IO.
+
+<p align="right"><a href="#top">⬆ Back to top</a></p>
+
+---
+
+## 🧠 State Management
+
+The application organizes global state into three Zustand stores.
+
+| Store | Responsibility |
+|---|---|
+| `authStore` | Authentication state, user details, tokens, and login/logout actions |
+| `cartStore` | Cart items, quantities, and cart totals |
+| `mapStore` | Delivery coordinates and delivery partner location |
+
+<p align="right"><a href="#top">⬆ Back to top</a></p>
+
+---
+
+## ⚡ Real-Time Updates
+
+FreshMart uses Socket.IO to deliver order-specific updates and delivery partner location data to connected clients.
+
+- **Order confirmation:** Notify connected clients when a delivery partner confirms an order through the `orderConfirmed` event.
+- **Live tracking:** Receive updated order status and delivery partner location data through the `liveTrackingUpdates` event.
+- **Order-specific rooms:** Join Socket.IO rooms using an order ID to receive updates for the relevant order.
+
+```mermaid
+flowchart TD
+    A[React Native App] -->|joinRoom: orderId| B[Socket.IO Server]
+    C[REST API] -->|Order confirmed| B
+    C -->|Status and location updated| B
+    B -->|orderConfirmed| D[Order Room]
+    B -->|liveTrackingUpdates| D
+    D --> E[Connected Clients]
+```
+
+<p align="right"><a href="#top">⬆ Back to top</a></p>
+
+---
+
+## 💾 Storage
+
+FreshMart uses **React Native MMKV** for native key-value persistence.
+
+MMKV supports persistent storage for authentication/session data and cart contents.
+
+<p align="right"><a href="#top">⬆ Back to top</a></p>
+
+---
+
+## 📸 Screenshots
+
+| Authentication, Home & Categories | Checkout & Order Tracking | Delivery Partner & Tracking |
+|:---:|:---:|:---:|
+| ![Authentication, home, and category screens](./src/assets/images/freshmart-auth-home-products.png) | ![Checkout and customer order tracking screens](./src/assets/images/freshmart-checkout-tracking.png) | ![Delivery partner and tracking screens](./src/assets/images/freshmart-delivery-tracking.png) |
+
+<p align="right"><a href="#top">⬆ Back to top</a></p>
+
+---
+
+## 🚀 Getting Started
+
+### 1. Prerequisites
+
+- **Node.js and npm:** Install Node.js (which includes npm) and make sure both are available in your terminal.
+- **React Native environment:** Follow the [official environment setup guide](https://reactnative.dev/docs/set-up-your-environment).
+- **Android:** Install Android Studio and configure an emulator or connected device.
+- **iOS:** Use macOS with Xcode, CocoaPods, and the repository's Ruby/Bundler setup.
+
+### 2. Clone the Repository
+
+```bash
+git clone https://github.com/krishnakmr08/react-native-freshmart.git
+cd react-native-freshmart
+```
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+For iOS, first run `bundle install` from the directory containing the repository's `Gemfile` if the Ruby/Bundler dependencies have not been installed. Then install the CocoaPods dependencies from the project root:
+
+```bash
+npm run pod-install
+```
+
+### 4. Start Metro
+
+Open a terminal in the project directory and run:
+
+```bash
 npm start
-
-# OR using Yarn
-yarn start
 ```
 
-## Step 2: Build and run your app
+Keep Metro running while launching the application.
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+### 5. Run the Application
 
-### Android
+For Android, open a second terminal and run:
 
-```sh
-# Using npm
+```bash
 npm run android
-
-# OR using Yarn
-yarn android
 ```
 
-### iOS
+For iOS on macOS, run:
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
+```bash
 npm run ios
-
-# OR using Yarn
-yarn ios
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+<p align="right"><a href="#top">⬆ Back to top</a></p>
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+---
 
-## Step 3: Modify your app
+## 🛠 Troubleshooting
 
-Now that you have successfully run the app, let's make changes!
+- **Custom fonts are missing:** Run `npm run link:fonts` if the project uses configured custom fonts.
+- **Metro cache issues:** Restart Metro with `npm start -- --reset-cache`.
+- **iOS CocoaPods errors:** Check your Ruby, Bundler, and CocoaPods configuration before retrying `npm run pod-install`.
+- **Reanimated or Worklets errors:** Verify the Babel and native configuration, then rebuild the application if required.
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+<p align="right"><a href="#top">⬆ Back to top</a></p>
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+---
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+## 🧰 Scripts
 
-## Congratulations! :tada:
+| Command | Description |
+|---|---|
+| `npm start` | Start the Metro bundler |
+| `npm run android` | Build and launch the Android application |
+| `npm run ios` | Build and launch the iOS application |
+| `npm run pod-install` | Install iOS CocoaPods dependencies using Bundler |
+| `npm run link:fonts` | Run `react-native-asset` for configured assets |
 
-You've successfully run and modified your React Native App. :partying_face:
+<p align="right"><a href="#top">⬆ Back to top</a></p>
 
-### Now what?
+---
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+## 👤 Author
 
-# Troubleshooting
+**Krishna Kumar**
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+<br />
 
-# Learn More
+<sub>React Native Developer — TypeScript · React Native · Reanimated · Node.js</sub>
 
-To learn more about React Native, take a look at the following resources:
+<br /><br />
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+[![GitHub](https://img.shields.io/badge/GitHub-krishnakmr08-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/krishnakmr08)
+
+<p align="right"><a href="#top">⬆ Back to top</a></p>
